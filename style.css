@@ -544,11 +544,15 @@
     font-size: 2rem;
   }
   .features {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
   .features div {
     width: 33%;
+  }
+  .features div img {
+    width: 50%;
+    height: auto;
   }
 
   .features div h3 {
