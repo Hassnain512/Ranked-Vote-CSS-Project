@@ -585,8 +585,13 @@
 
   .outer-section {
     height: auto;
+    width: 100%;
   }
 
+  .section-txt {
+    width: 70%;
+    margin: 10px 0px 10px 0px;
+  }
   .section-txt h3 {
     font-size: 2.25rem;
     margin-bottom: 10px;
