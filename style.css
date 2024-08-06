@@ -329,6 +329,7 @@
 .inner-section div:hover {
   border-radius: 40px;
   box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 .bootstap {
   width: 100%;
@@ -341,26 +342,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-bottom:20px ;
+  margin-bottom: 20px;
 }
-.ranked-div0{
+.ranked-div0 {
   font-size: 17px;
 }
-.ranked-div0 h4{
+.ranked-div0 h4 {
   font-size: 2.5rem;
   text-align: center;
   margin: 10px 0px 10px 0px;
 }
-.ranked-div0 p{
-color: #a899a6;
-text-align: center;
-margin: 20px 0px 10px 0px;
+.ranked-div0 p {
+  color: #a899a6;
+  text-align: center;
+  margin: 20px 0px 10px 0px;
 }
 .ranked-inner {
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   gap: 50px;
 }
 .ranked-div1 {
@@ -371,13 +372,13 @@ margin: 20px 0px 10px 0px;
   margin-top: 200px;
 }
 .ranked-div2 {
-  width: 40%; 
+  width: 40%;
   height: 500px;
 }
 .ranked-div2 img {
   width: 100%;
 }
-.pole-vote{
+.pole-vote {
   width: 100%;
   height: 300px;
   background-color: #7540ee;
@@ -386,13 +387,13 @@ margin: 20px 0px 10px 0px;
   justify-content: center;
   margin-bottom: 20px;
 }
-.inner-pole-vote{
+.inner-pole-vote {
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.inner-pole-vote div button{
+.inner-pole-vote div button {
   margin-top: 60px;
   width: 170px;
   height: 50px;
@@ -404,55 +405,319 @@ margin: 20px 0px 10px 0px;
   cursor: pointer;
   font-size: 20px;
 }
-.inner-pole-vote div p{
-color: white;
-font-size: 18px;
-margin-bottom: 10px;
+.inner-pole-vote div p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
-.inner-pole-vote div h3{
+.inner-pole-vote div h3 {
   font-size: 2.5rem;
   color: white;
 }
-.footer{
+.footer {
   width: 100%;
   height: 400px;
   display: flex;
   justify-content: space-around;
 }
-.footer-title{
+.footer-title {
   width: 20%;
   height: 100px;
-
 }
-.footer-title img{
+.footer-title img {
   width: 70%;
 }
-.footer-title p{
-font-size: 18px;
-margin-top: 10px;
+.footer-title p {
+  font-size: 18px;
+  margin-top: 10px;
 }
-.footer-title p a{
+.footer-title p a {
   text-decoration: none;
   font-weight: 500;
   color: blue;
 }
-.footer-section{
+.footer-section {
   width: 40%;
   height: 250px;
   display: flex;
   justify-content: space-between;
   font-size: 17px;
-
 }
-.footer-section div{
+.footer-section div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.footer-section div h3{
+.footer-section div h3 {
   size: 2rem;
 }
-.footer-section a{
+.footer-section a {
   text-decoration: none;
   color: #a899a6;
+}
+@media screen and (max-width: 900px) {
+  #nav-logo {
+    margin-left: 10px;
+    height: 30px;
+    width: auto;
+  }
+  .inner-container-nav {
+    margin-left: 0px;
+    display: none;
+  }
+
+  #div1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  #div1 > h1 {
+    font-size: 2.5rem;
+
+    text-align: center;
+  }
+  #div1 > p {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #div1 > button {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #div2 {
+    display: none;
+  }
+
+  .sponsors {
+    height: 100%;
+  }
+  .sponsors > p {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #a899a6;
+  }
+  .sponsor-logos {
+    flex-wrap: wrap;
+    height: auto;
+    row-gap: 30px;
+  }
+  .sponsor-logos img {
+    width: 120px;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+  .sponsor-logos img:hover {
+    filter: grayscale(0%);
+  }
+
+  .live-demos {
+    height: 100%;
+  }
+  .demo {
+    margin: 40px 0;
+    flex-direction: column;
+    height: auto;
+  }
+  .demo > p {
+    padding: 16px;
+    text-align: center;
+  }
+  .demo > button {
+    margin-right: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .key-features {
+    height: auto;
+  }
+  .key-features p {
+    text-align: center;
+    color: #a899a6;
+  }
+  .key-features h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .features {
+    width: 100%;
+    height: auto;
+  }
+  .features div {
+    width: 33%;
+  }
+
+  .features div h3 {
+    text-align: center;
+  }
+  .vote-img {
+    height: auto;
+  }
+  .vote-img img {
+    width: 80%;
+    height: auto;
+  }
+  .numbers {
+    width: 100%;
+    min-height: 80vh;
+  }
+  .numbers2 {
+    flex-direction: column;
+    height: auto;
+  }
+  .numbers2 h3 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .numbers2 p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /*Yahan tk responsive hai*/
+
+  .outer-section {
+    height: auto;
+  }
+  
+  .section-txt h3 {
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+  }
+  .inner-section {
+    width: 80%;
+    height: auto;
+    flex-direction: column; 
+  }
+  .inner-section div {
+    width: 95%;
+  }
+
+
+  /*Yahan tk ok hai */
+
+
+  .ranked-choice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .ranked-div0 {
+    font-size: 17px;
+  }
+  .ranked-div0 h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+  }
+  .ranked-div0 p {
+    color: #a899a6;
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+  }
+  .ranked-inner {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+  }
+  .ranked-div1 {
+    width: 40%;
+    height: 500px;
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 200px;
+  }
+  .ranked-div2 {
+    width: 40%;
+    height: 500px;
+  }
+  .ranked-div2 img {
+    width: 100%;
+  }
+  .pole-vote {
+    width: 100%;
+    height: 300px;
+    background-color: #7540ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .inner-pole-vote {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .inner-pole-vote div button {
+    margin-top: 60px;
+    width: 170px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .inner-pole-vote div p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .inner-pole-vote div h3 {
+    font-size: 2.5rem;
+    color: white;
+  }
+  .footer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-title {
+    width: 20%;
+    height: 100px;
+  }
+  .footer-title img {
+    width: 70%;
+  }
+  .footer-title p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .footer-title p a {
+    text-decoration: none;
+    font-weight: 500;
+    color: blue;
+  }
+  .footer-section {
+    width: 40%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+  }
+  .footer-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer-section div h3 {
+    size: 2rem;
+  }
+  .footer-section a {
+    text-decoration: none;
+    color: #a899a6;
+  }
 }
